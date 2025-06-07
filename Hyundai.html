@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChapusCarGT-Drive your dream</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ChapusCarGT</h1>
+         <p>"Drive your dream with us"</p>
+        <img src="imgs/Logo.png" alt="logo">
+        <nav>
+            <ul class="nav-links">
+                <li class="inicio"><a href="index.html">Menu</a></li>
+                <li class="catalogo"><a href="Catalogo.html">Catalog</a></li>
+                <li class="servicios"><a href="Servicios.html">Services</a></li>
+                <li class="contactos"><a href="Contactos.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>   
+    <section>
+        <div class="product">
+            <div class="carrusel" data-carrusel="hyundai">
+                <button class="flechaIzquierda" onclick="cambiarImagen('hyundai',-1)">&#9665</button>
+                <img class="imagen-producto" src="imgs/Hyundai Accent 2017.avif" alt="">
+                <button class="flechaDerecha" onclick="cambiarImagen('hyundai',1)" >&#9655</button>
+            </div>
+            <div class="product-info">
+                <h3>Hyundai Accent 2017</h3>
+                <p>Low-cost compact car with a 1.6-liter <br>
+                four-cylinder engine that generates 137 horsepower. <br>
+                and is available in a variety of colors.<br>
+                <span><b>Q45,000.00🔥🚘</b></span>
+                </p>
+            </div>
+            <div class="botones-carrito">
+                <div class="contador">
+                    <button class="flechaMenos" onclick="modificarCantidad(-1)">-</button> 
+                    <span class="cantidad">1</span>
+                    <button class="flechaMas" onclick="modificarCantidad(1)">+</button>
+                </div>
+                <button class="btn-comprar" onclick="Comprar()">Add to cart🛒</button>
+            </div>
+        </div>
+    </section>
+    <div class="chatbot-icon">💬</div>
+
+    <div class="chat-container">
+        <div class="chat-header">ChapusCarGT Chatbot</div>
+        <div class="chat-messages">
+            <div class="message bot">Hola 👋 ¿En qué podemos ayudarte hoy?</div>
+        </div>
+        <div class="chat-options">
+            <button data-option="precios">What are the prices?</button>
+            <button data-option="cita">I want to schedule an appointment</button>
+            <button data-option="info">What are the services?</button>
+        </div>
+    </div>
+    <footer>
+        <h4>Contacts</h4>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="imgs/Gmail.png" alt=""></a>
+        <h5>Gmail</h5>
+        <a href="https://www.tiktok.com/es/"><img src="imgs/Tik tok.png" alt=""></a>
+        <h5>Tik Tok</h5>
+        <a href="https://wa.me/50256128753"><img src="imgs/Whatssap.png" alt=""></a>
+        <h5>Whatsapp</h5>
+        <a href="https://www.instagram.com/"><img src="imgs/Instagram.png" alt=""></a>
+        <h5>Intagram</h5>
+        <p>&copy; ChapusCarGT all rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

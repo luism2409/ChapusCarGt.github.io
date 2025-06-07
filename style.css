@@ -1,0 +1,763 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+}
+
+header{
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30vh;
+    align-items: center;
+    color: #000;
+    box-shadow: 0px 0px 20px 2px ;
+}
+
+nav{
+    position: relative;
+    float: left;
+    font-size: 18px;
+    padding: 20px;
+    color: #000;
+    display: block;
+    font-weight: 600;
+}
+
+img[alt="logo"]{
+    width: 75px;
+    top: 10px;
+    left: 10px;
+    height: auto;
+    position: absolute;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: self-end;
+    align-self: center;
+}
+
+.nav-links a{
+    text-decoration: 0;
+    color: #000;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.inicio:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+.inicio::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #000;
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-280%);
+    transition: width 0.3s ease;
+}
+
+.inicio:hover::after{
+    width: 90px;
+}
+
+.catalogo:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+.catalogo::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #000;
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-145%);
+    transition: width 0.3s ease;
+}
+
+.catalogo:hover::after{
+    width: 90px;
+}
+
+
+
+.servicios:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+.servicios::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #000;
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(10%);
+    transition: width 0.3s ease;
+}
+
+.servicios:hover::after{
+    width: 90px;
+}
+
+.contactos:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+.contactos::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #000;
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(170%);
+    transition: width 0.3s ease;
+}
+
+.contactos:hover::after{
+    width: 90px;
+}
+
+header h1{
+    text-align: center;
+}
+
+header p{
+    text-align: center;
+}
+
+.Productos{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background:#000;
+    background-size: cover;
+}
+
+.Productos button{
+    display: inline-block;
+    color: white;
+    padding: 12px 24px;
+    background: blue;
+    border: none;
+    border-radius: 30px; 
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+.Productos button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px;
+    background-color: white;
+    color: #000;
+}
+
+.Info{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 300px;
+}
+
+.Imagen-Info{
+    flex: 1;
+}
+
+.Imagen-Info img{
+    width: 100%;
+    max-width: 500%;
+    border-radius: 8px;
+}
+
+.text-info{
+    flex: 1;
+}
+
+.Info h3{
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Info p{
+    color: #666;
+    line-height: 1.6;
+}
+
+.Info button{
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    left: calc(50% + 200px);
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Info button:hover{
+    color: #000;
+    background-color: white;
+    font-weight: bold;
+}
+
+.Servicios{
+    padding: 50px;
+    text-align: center;
+    color: #ebebeb;
+    background-color: #000;
+}
+
+.Servicios button{
+    display: inline-block;
+    color: #ebebeb;
+    background-color: blue;
+    border-radius: 2px;
+    padding: 12px 24px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.Servicios button:hover{
+    transform: scaleX(1.05);
+    background-color: #ebebeb;
+    color: #000;
+    box-shadow: 0px 4px 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+footer img {
+    width: 50px;
+    object-fit: contain;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.Ig{
+    width: 80px;
+}
+
+.tiktok{
+    width: 60px;
+}
+
+footer p{
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.Catalogo {
+    padding: 40px;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.Catalogo h2 {
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.catalogo-item {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalogo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.catalogo-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.catalogo-item:hover img {
+    transform: scale(1.03);
+}
+
+.item-info {
+    padding: 1rem;
+    text-align: center;
+    background: white;
+}
+
+.item-info h3{
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.item-info p{
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.Servicios-1{
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.Servicios-1 h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    padding: 20px;
+}
+
+.Accesorios{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.CarWash{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.Mecanica{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.servicio-item{
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-item:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.servicio-item img {
+    width: 110px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.servicio-item h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.servicio-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.product{
+    display: flex;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.carrusel{
+    position: relative;
+    width: 400px;
+    height: 250px; 
+    flex-shrink: 0;
+}
+
+.imagen-producto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    transition: opacity 0.5s ease;
+}
+
+
+.flechaIzquierda, .flechaDerecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.flechaIzquierda:hover, .flechaDerecha:hover{
+    background: rgba(0, 0, 0, 0.8)
+}
+
+.flechaIzquierda{
+    left: 10px;
+}
+
+.flechaDerecha{
+    right: 10px;
+}
+
+.product-info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center; 
+    padding: 20px 0;
+}
+
+.product-info h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.product-info p{
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.product-info span{
+    color: #000;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.botones-carrito{
+    align-items: center;
+    gap: 10px;
+    margin-top: 40%;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.contador{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.flechaMenos, .flechaMas{
+    background-color:white;
+    color: #000;
+    border: 2px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 23px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.flechaMenos:hover, .flechaMas:hover{
+    background-color: blue;
+    color: white;
+}
+
+.cantidad{
+    font-size: 18px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.btn-comprar{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 200px;
+}
+
+.btn-comprar:hover{
+    background-color: white;
+    color: #000;
+}
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 20px;
+}
+
+input[type="text"], input[type="email"], textarea{
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+textarea{
+    min-height: 150px;
+    resize: vertical;
+}
+
+button[type="submit"]{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+}
+
+button[type="submit"]:hover{
+    background-color: white;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:active{
+    transform: translateY(0);
+}
+
+.chatbot-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: blue;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.chat-container{
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.chat-header{
+    background:blue;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.chat-messages{
+    max-height: 200px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.message.bot{
+    color: #007bff;
+}
+
+.message.user{
+    color: blue;
+    text-align: right;
+}
+
+.chat-options{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.chat-options button{
+    margin: 3px 0;
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-options button:hover{
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .Catalogo {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .catalogo-item{
+        max-width: 100%;
+    }
+
+    .product {
+        flex-direction: column;
+    }
+    .carrusel {
+        width: 100%;
+    }
+
+    .botones-carrito {
+         align-items: center;
+         margin-top: 30px;
+     }
+    
+    .btn-comprar{
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .contador{
+        margin-bottom: 10px;
+    }
+
+    form {
+            padding: 20px;
+            margin: 20px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px 12px;
+        }
+}
